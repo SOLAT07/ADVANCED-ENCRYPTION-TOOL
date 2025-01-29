@@ -142,3 +142,28 @@ Running the Code
 1.Save the code to a file, e.g., AES256.py.
 2.Run the script in the terminal:bashCopy codepython3 AES256.py
 3.Follow the prompts to encrypt or decrypt a message.
+
+Output 
+
+Encryption:
+
+Enter 1 to encrypt and 2 to decrypt: 1
+Enter the Password: mysecurepassword
+Enter the Secret Message: Hello, World!
+
+Encrypted Data:
+cipher_text: a1b2c3...
+salt: x4y5z6...
+nonce: 123abc...
+tag: pqr456...
+
+Encrypted data saved to encrypted_data.json
+
+
+Decryption:
+
+Enter 1 to encrypt and 2 to decrypt: 2
+Enter the filename to load encrypted data (default: encrypted_data.json):
+Enter the password: mysecurepassword
+Decrypted Message:
+Hello, World!
